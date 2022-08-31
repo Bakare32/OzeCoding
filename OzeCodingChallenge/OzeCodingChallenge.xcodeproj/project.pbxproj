@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE27A80C541A0B7EE8F383DC /* Pods_OzeCodingChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48E43DD25CC081D301FD296E /* Pods_OzeCodingChallenge.framework */; };
 		EDE58F9E28BE597400DC3446 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE58F9D28BE597400DC3446 /* AppDelegate.swift */; };
 		EDE58FA028BE597400DC3446 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE58F9F28BE597400DC3446 /* SceneDelegate.swift */; };
 		EDE58FA228BE597400DC3446 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE58FA128BE597400DC3446 /* HomeViewController.swift */; };
@@ -23,6 +24,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		179FE7EF3036DED6F43016D8 /* Pods-OzeCodingChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OzeCodingChallenge.release.xcconfig"; path = "Target Support Files/Pods-OzeCodingChallenge/Pods-OzeCodingChallenge.release.xcconfig"; sourceTree = "<group>"; };
+		48E43DD25CC081D301FD296E /* Pods_OzeCodingChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OzeCodingChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB8341842021540AB73E9978 /* Pods-OzeCodingChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OzeCodingChallenge.debug.xcconfig"; path = "Target Support Files/Pods-OzeCodingChallenge/Pods-OzeCodingChallenge.debug.xcconfig"; sourceTree = "<group>"; };
 		EDE58F9A28BE597400DC3446 /* OzeCodingChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OzeCodingChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDE58F9D28BE597400DC3446 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EDE58F9F28BE597400DC3446 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -45,17 +49,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE27A80C541A0B7EE8F383DC /* Pods_OzeCodingChallenge.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		837D11E7086C0494CC55CDAB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				48E43DD25CC081D301FD296E /* Pods_OzeCodingChallenge.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		EDE58F9128BE597400DC3446 = {
 			isa = PBXGroup;
 			children = (
 				EDE58F9C28BE597400DC3446 /* OzeCodingChallenge */,
 				EDE58F9B28BE597400DC3446 /* Products */,
+				FFB3E071063CB7C2FCE95438 /* Pods */,
+				837D11E7086C0494CC55CDAB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -112,6 +127,16 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		FFB3E071063CB7C2FCE95438 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AB8341842021540AB73E9978 /* Pods-OzeCodingChallenge.debug.xcconfig */,
+				179FE7EF3036DED6F43016D8 /* Pods-OzeCodingChallenge.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -119,9 +144,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EDE58FAE28BE597500DC3446 /* Build configuration list for PBXNativeTarget "OzeCodingChallenge" */;
 			buildPhases = (
+				1E7533DAD48126B24C93E28D /* [CP] Check Pods Manifest.lock */,
 				EDE58F9628BE597400DC3446 /* Sources */,
 				EDE58F9728BE597400DC3446 /* Frameworks */,
 				EDE58F9828BE597400DC3446 /* Resources */,
+				6732F2E913E75E74140281B2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -177,6 +204,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1E7533DAD48126B24C93E28D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OzeCodingChallenge-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6732F2E913E75E74140281B2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OzeCodingChallenge/Pods-OzeCodingChallenge-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OzeCodingChallenge/Pods-OzeCodingChallenge-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OzeCodingChallenge/Pods-OzeCodingChallenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EDE58F9628BE597400DC3446 /* Sources */ = {
@@ -334,6 +403,7 @@
 		};
 		EDE58FAF28BE597500DC3446 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB8341842021540AB73E9978 /* Pods-OzeCodingChallenge.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -361,6 +431,7 @@
 		};
 		EDE58FB028BE597500DC3446 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 179FE7EF3036DED6F43016D8 /* Pods-OzeCodingChallenge.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

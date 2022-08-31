@@ -10,7 +10,6 @@ import Foundation
 
 class GetDataViewModel {
     
-    
     func setUpNetwork() {
         NetworkService.shared.getData{  [weak self ] result in
             switch result {
