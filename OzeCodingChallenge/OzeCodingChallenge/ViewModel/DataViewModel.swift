@@ -49,8 +49,7 @@ class GetDataViewModel {
                     let billsObj = DataRealmModel(id:obj.id ,name: obj.login, avatarName: obj.avatarURL)
                     self?.dataLists.append(billsObj)
                 }
-                
-//                debugPrint("--\(self?.dataLists)")
+
               
                 let aValue = "a".unicodeScalars.first!.value
                 let zValue = "z".unicodeScalars.first!.value
@@ -62,22 +61,8 @@ class GetDataViewModel {
                    
                     self?.anotherResult.forEach({
                         self?.usedData.append($0)
-//                        print("---\(self?.usedData)")
                     })
-//                var thisArray = self?.dataLists
-//                                .filter{$0.name?.lowercased().first! == aChar}
-//                                .sorted{$1.name?.caseInsensitiveCompare($0.name ?? "") == .orderedDescending}
-//                    if !(thisArray?.isEmpty ?? false) {
-//                        self?.anotherResult = thisArray ?? [DataRealmModel]()
-////                        self?.anotherResult.forEach{print("print the dats is \($0)")}
-//                    }
-//                    self?.anotherResult.forEach{print("print the dats is \($0)")}
                 }
-                
-                debugPrint("iii \(self?.dataLists.count)")
-                debugPrint("--- \(self?.usedData.count)")
-////                print(self?.dataLists)
-////                print(self?.anotherResult)
                 
                 self?.completion?()
                 self?.saveDataLists(bills: self?.dataLists ?? [DataRealmModel]())

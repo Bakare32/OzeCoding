@@ -9,14 +9,15 @@ import UIKit
 
 class DetailsViewController: UIViewController {
 
+    var avatarId = ""
+    var name = ""
     
     let productImageV: UIImageView = {
       let view = UIImageView()
       view.backgroundColor = UIColor(red: 0.93, green: 0.93, blue: 0.97, alpha: 1.00)
-      view.contentMode = .scaleAspectFit
+//      view.contentMode = .scaleAspectFit
       view.layer.cornerRadius = 20
       view.isUserInteractionEnabled = true
-        view.backgroundColor = .blue
       view.translatesAutoresizingMaskIntoConstraints = false
       return view
     }()
@@ -30,14 +31,6 @@ class DetailsViewController: UIViewController {
       return textView
     }()
     
-    let idTextView: UILabel = {
-      let textView = UILabel()
-      textView.text = "Name: $111.67"
-      textView.font = UIFont.boldSystemFont(ofSize: 14)
-      textView.font = UIFont(name: "NunitoSans-Semibold", size: 14)
-      textView.translatesAutoresizingMaskIntoConstraints = false
-      return textView
-    }()
     
     
     override func viewDidLoad() {
@@ -46,6 +39,9 @@ class DetailsViewController: UIViewController {
         title = "User Details"
         navigationController?.navigationBar.prefersLargeTitles =  true
         setupConstraints()
+        
+        productPriceTextView.text = "Name: \(name)"
+        getImage()
         // Do any additional setup after loading the view.
     }
     
@@ -57,10 +53,25 @@ class DetailsViewController: UIViewController {
     
     func addDefaultViews() {
       view.addSubview(productImageV)
-      view.addSubview(idTextView)
       view.addSubview(productPriceTextView)
-
     }
+    
+    func getData(from url: URL, completion: @escaping (Data?, URLResponse?, Error?) -> ()) {
+        URLSession.shared.dataTask(with: url, completionHandler: completion).resume()
+    }
+    
+    func getImage() {
+        getData(from: (avatarId.asUrl)!) { data, response, error in
+                guard let data = data, error == nil else { return }
+                // always update the UI from the main thread
+                DispatchQueue.main.async() { [weak self] in
+//                    self?.productImageV.rounded()
+                    self?.productImageV.image = UIImage(data: data)
+                }
+            }
+    }
+    
+  
     
     func setupConstraints() {
       addDefaultViews()
@@ -71,8 +82,6 @@ class DetailsViewController: UIViewController {
         productImageV.heightAnchor.constraint(equalToConstant: 200),
         productPriceTextView.topAnchor.constraint(equalTo: productImageV.bottomAnchor, constant: 30),
         productPriceTextView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 30),
-        idTextView.topAnchor.constraint(equalTo: productPriceTextView.bottomAnchor, constant: 20),
-        idTextView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 30),
       ])
     }
     

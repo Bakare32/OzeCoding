@@ -10,17 +10,6 @@ import UIKit
 class MainDataCell: UITableViewCell {
 
     static var identifier = "MainCollectionViewCellID"
-//    weak var delegate: MainCollectionViewCellDelegate?
-//
-////    var isLike: Bool = false
-////
-//    var newPhoto: DisplayModel?
-    
-//    private func configureLikedBtn(for selectedState: Bool) {
-//        topBackArrowButton.setImage(selectedState ? UIImage(systemName: "star.circle.fill") : UIImage(systemName: "star.circle"), for: .normal)
-//        topBackArrowButton.tintColor = selectedState ? .white : .black
-//    }
-    
     
     private let userImageView: UIImageView = {
         let imageView = UIImageView()
@@ -32,7 +21,7 @@ class MainDataCell: UITableViewCell {
         return imageView
     }()
     
-    private let titleLabel: UILabel = {
+    let titleLabel: UILabel = {
         let name = UILabel()
         name.textColor =  .label
         name.numberOfLines = 1
@@ -82,8 +71,7 @@ class MainDataCell: UITableViewCell {
     func configure(with model: DataRealmModel) {
         if model.avatarName == "" {
             let theName = model.name
-//            let stringAmount = "\(Int(theAmount))"
-//            userImageView.contentMode = .scaleAspectFit
+
             userImageView.rounded()
             userImageView.setTransactionImage(string: "A", color: UIColor.getDashColor(digits: Int(2)), circular: true, stroke: false, fontSize: 13)
         }

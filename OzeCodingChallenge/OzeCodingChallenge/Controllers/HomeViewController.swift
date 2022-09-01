@@ -112,7 +112,11 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        let cell = tableView.cellForRow(at: indexPath) as! MainDataCell
+        let obj = viewModel.usedData[indexPath.row]
         let viewController = DetailsViewController()
+        viewController.avatarId = obj.avatarName  ?? ""
+        viewController.name = cell.titleLabel.text ?? ""
 //        viewController.usedId = (allCars?.result[indexPath.row].id)!
 //        UserDefaults.standard.set(viewController.usedId, forKey: "Myid")
 //        viewController.configure(with: (allCars?.result[indexPath.row].imageURL)!)
