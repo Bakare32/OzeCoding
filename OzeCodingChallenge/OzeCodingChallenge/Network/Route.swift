@@ -15,7 +15,7 @@ enum Route {
     var description: String {
         switch self {
         case .pickUpLocation:
-            return "q=lagos&page=1"
+            return "q=lagos&page=\(counter)"
         }
     }
 }

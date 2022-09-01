@@ -8,10 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		CE27A80C541A0B7EE8F383DC /* Pods_OzeCodingChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48E43DD25CC081D301FD296E /* Pods_OzeCodingChallenge.framework */; };
+		ED19A3E828BFFC0D00E31D57 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED19A3E728BFFC0D00E31D57 /* String.swift */; };
+		ED19A3ED28C028EE00E31D57 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED19A3EC28C028EE00E31D57 /* DetailsViewController.swift */; };
 		EDE58F9E28BE597400DC3446 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE58F9D28BE597400DC3446 /* AppDelegate.swift */; };
 		EDE58FA028BE597400DC3446 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE58F9F28BE597400DC3446 /* SceneDelegate.swift */; };
 		EDE58FA228BE597400DC3446 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE58FA128BE597400DC3446 /* HomeViewController.swift */; };
-		EDE58FA528BE597400DC3446 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDE58FA328BE597400DC3446 /* Main.storyboard */; };
 		EDE58FA728BE597500DC3446 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDE58FA628BE597500DC3446 /* Assets.xcassets */; };
 		EDE58FAA28BE597500DC3446 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDE58FA828BE597500DC3446 /* LaunchScreen.storyboard */; };
 		EDE58FB328BE5A7B00DC3446 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE58FB228BE5A7B00DC3446 /* Route.swift */; };
@@ -21,17 +22,27 @@
 		EDE58FBB28BE5AD700DC3446 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE58FBA28BE5AD700DC3446 /* StringExtension.swift */; };
 		EDE58FBE28BF503600DC3446 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE58FBD28BF503600DC3446 /* DataModel.swift */; };
 		EDE58FC128BF514100DC3446 /* DataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE58FC028BF514100DC3446 /* DataViewModel.swift */; };
+		EDE58FC328BF5CB600DC3446 /* RealmDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE58FC228BF5CB600DC3446 /* RealmDataSource.swift */; };
+		EDE58FC528BF5D2100DC3446 /* DataRealmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE58FC428BF5D2100DC3446 /* DataRealmModel.swift */; };
+		EDE58FC828BF6D4D00DC3446 /* AppsColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE58FC728BF6D4D00DC3446 /* AppsColors.swift */; };
+		EDE58FCA28BF6DC800DC3446 /* ColorsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE58FC928BF6DC800DC3446 /* ColorsExtension.swift */; };
+		EDE58FCC28BF6E0200DC3446 /* FontsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE58FCB28BF6E0200DC3446 /* FontsExtension.swift */; };
+		EDE58FCF28BF70E100DC3446 /* MainDataCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE58FCE28BF70E100DC3446 /* MainDataCell.swift */; };
+		EDE58FD128BF749F00DC3446 /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE58FD028BF749F00DC3446 /* ViewExtension.swift */; };
+		EDE58FD328BF764600DC3446 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE58FD228BF764600DC3446 /* HeaderView.swift */; };
+		EDE58FD528BF779C00DC3446 /* ImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE58FD428BF779C00DC3446 /* ImageViewExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		179FE7EF3036DED6F43016D8 /* Pods-OzeCodingChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OzeCodingChallenge.release.xcconfig"; path = "Target Support Files/Pods-OzeCodingChallenge/Pods-OzeCodingChallenge.release.xcconfig"; sourceTree = "<group>"; };
 		48E43DD25CC081D301FD296E /* Pods_OzeCodingChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OzeCodingChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB8341842021540AB73E9978 /* Pods-OzeCodingChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OzeCodingChallenge.debug.xcconfig"; path = "Target Support Files/Pods-OzeCodingChallenge/Pods-OzeCodingChallenge.debug.xcconfig"; sourceTree = "<group>"; };
+		ED19A3E728BFFC0D00E31D57 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		ED19A3EC28C028EE00E31D57 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		EDE58F9A28BE597400DC3446 /* OzeCodingChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OzeCodingChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDE58F9D28BE597400DC3446 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EDE58F9F28BE597400DC3446 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		EDE58FA128BE597400DC3446 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		EDE58FA428BE597400DC3446 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EDE58FA628BE597500DC3446 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EDE58FA928BE597500DC3446 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EDE58FAB28BE597500DC3446 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -42,6 +53,15 @@
 		EDE58FBA28BE5AD700DC3446 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		EDE58FBD28BF503600DC3446 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		EDE58FC028BF514100DC3446 /* DataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewModel.swift; sourceTree = "<group>"; };
+		EDE58FC228BF5CB600DC3446 /* RealmDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmDataSource.swift; sourceTree = "<group>"; };
+		EDE58FC428BF5D2100DC3446 /* DataRealmModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataRealmModel.swift; sourceTree = "<group>"; };
+		EDE58FC728BF6D4D00DC3446 /* AppsColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsColors.swift; sourceTree = "<group>"; };
+		EDE58FC928BF6DC800DC3446 /* ColorsExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsExtension.swift; sourceTree = "<group>"; };
+		EDE58FCB28BF6E0200DC3446 /* FontsExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontsExtension.swift; sourceTree = "<group>"; };
+		EDE58FCE28BF70E100DC3446 /* MainDataCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDataCell.swift; sourceTree = "<group>"; };
+		EDE58FD028BF749F00DC3446 /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
+		EDE58FD228BF764600DC3446 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		EDE58FD428BF779C00DC3446 /* ImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +82,15 @@
 				48E43DD25CC081D301FD296E /* Pods_OzeCodingChallenge.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ED19A3E928C028BF00E31D57 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EDE58FA128BE597400DC3446 /* HomeViewController.swift */,
+				ED19A3EC28C028EE00E31D57 /* DetailsViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		EDE58F9128BE597400DC3446 = {
@@ -85,13 +114,14 @@
 		EDE58F9C28BE597400DC3446 /* OzeCodingChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				ED19A3E928C028BF00E31D57 /* Controllers */,
+				EDE58FCD28BF70C300DC3446 /* Cell */,
+				EDE58FC628BF6D3D00DC3446 /* Views */,
 				EDE58FBF28BF505B00DC3446 /* ViewModel */,
 				EDE58FBC28BF501200DC3446 /* Model */,
 				EDE58FB128BE5A5B00DC3446 /* Network */,
 				EDE58F9D28BE597400DC3446 /* AppDelegate.swift */,
 				EDE58F9F28BE597400DC3446 /* SceneDelegate.swift */,
-				EDE58FA128BE597400DC3446 /* HomeViewController.swift */,
-				EDE58FA328BE597400DC3446 /* Main.storyboard */,
 				EDE58FA628BE597500DC3446 /* Assets.xcassets */,
 				EDE58FA828BE597500DC3446 /* LaunchScreen.storyboard */,
 				EDE58FAB28BE597500DC3446 /* Info.plist */,
@@ -115,6 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				EDE58FBD28BF503600DC3446 /* DataModel.swift */,
+				EDE58FC428BF5D2100DC3446 /* DataRealmModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -123,8 +154,31 @@
 			isa = PBXGroup;
 			children = (
 				EDE58FC028BF514100DC3446 /* DataViewModel.swift */,
+				EDE58FC228BF5CB600DC3446 /* RealmDataSource.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		EDE58FC628BF6D3D00DC3446 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EDE58FC728BF6D4D00DC3446 /* AppsColors.swift */,
+				EDE58FC928BF6DC800DC3446 /* ColorsExtension.swift */,
+				EDE58FCB28BF6E0200DC3446 /* FontsExtension.swift */,
+				EDE58FD028BF749F00DC3446 /* ViewExtension.swift */,
+				EDE58FD228BF764600DC3446 /* HeaderView.swift */,
+				EDE58FD428BF779C00DC3446 /* ImageViewExtension.swift */,
+				ED19A3E728BFFC0D00E31D57 /* String.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EDE58FCD28BF70C300DC3446 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				EDE58FCE28BF70E100DC3446 /* MainDataCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		FFB3E071063CB7C2FCE95438 /* Pods */ = {
@@ -133,7 +187,6 @@
 				AB8341842021540AB73E9978 /* Pods-OzeCodingChallenge.debug.xcconfig */,
 				179FE7EF3036DED6F43016D8 /* Pods-OzeCodingChallenge.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -199,7 +252,6 @@
 			files = (
 				EDE58FAA28BE597500DC3446 /* LaunchScreen.storyboard in Resources */,
 				EDE58FA728BE597500DC3446 /* Assets.xcassets in Resources */,
-				EDE58FA528BE597400DC3446 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,29 +305,32 @@
 			buildActionMask = 2147483647;
 			files = (
 				EDE58FA228BE597400DC3446 /* HomeViewController.swift in Sources */,
+				EDE58FD328BF764600DC3446 /* HeaderView.swift in Sources */,
+				ED19A3E828BFFC0D00E31D57 /* String.swift in Sources */,
+				EDE58FCA28BF6DC800DC3446 /* ColorsExtension.swift in Sources */,
+				EDE58FC328BF5CB600DC3446 /* RealmDataSource.swift in Sources */,
+				EDE58FCC28BF6E0200DC3446 /* FontsExtension.swift in Sources */,
 				EDE58FB328BE5A7B00DC3446 /* Route.swift in Sources */,
 				EDE58FB528BE5A8600DC3446 /* AppError.swift in Sources */,
+				EDE58FD528BF779C00DC3446 /* ImageViewExtension.swift in Sources */,
 				EDE58F9E28BE597400DC3446 /* AppDelegate.swift in Sources */,
 				EDE58FC128BF514100DC3446 /* DataViewModel.swift in Sources */,
+				ED19A3ED28C028EE00E31D57 /* DetailsViewController.swift in Sources */,
 				EDE58FBB28BE5AD700DC3446 /* StringExtension.swift in Sources */,
 				EDE58FB728BE5A9300DC3446 /* NetworkService.swift in Sources */,
 				EDE58FB928BE5AA500DC3446 /* Method.swift in Sources */,
 				EDE58FA028BE597400DC3446 /* SceneDelegate.swift in Sources */,
+				EDE58FCF28BF70E100DC3446 /* MainDataCell.swift in Sources */,
 				EDE58FBE28BF503600DC3446 /* DataModel.swift in Sources */,
+				EDE58FD128BF749F00DC3446 /* ViewExtension.swift in Sources */,
+				EDE58FC528BF5D2100DC3446 /* DataRealmModel.swift in Sources */,
+				EDE58FC828BF6D4D00DC3446 /* AppsColors.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		EDE58FA328BE597400DC3446 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EDE58FA428BE597400DC3446 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		EDE58FA828BE597500DC3446 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -413,7 +468,6 @@
 				INFOPLIST_FILE = OzeCodingChallenge/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -441,7 +495,6 @@
 				INFOPLIST_FILE = OzeCodingChallenge/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
